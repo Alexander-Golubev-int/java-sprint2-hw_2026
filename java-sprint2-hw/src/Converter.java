@@ -1,5 +1,9 @@
 public class Converter {
 
+    private Converter() {
+
+    }
+
     public static int convertToKm(int steps) {
         return (int)(steps * 0.75) / 1000;
     }

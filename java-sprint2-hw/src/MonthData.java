@@ -2,15 +2,6 @@ public class MonthData {
 
     int[] days = new int[30];
 
-
-    //удалить
-    public MonthData() {
-        for (int i = 0; i < days.length; i++) {
-            days[i] = 1000;
-        }
-        days[0] = 15000;
-    }
-
     void printDaysAndStepsFromMonth() {
         for (int i = 0; i < days.length; i++) {
             System.out.println(i + 1 + " день: " + days[i]);
