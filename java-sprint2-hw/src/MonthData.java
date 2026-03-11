@@ -45,7 +45,6 @@ public class MonthData {
             } else {
                 if (bestSeries < currentSeries) {
                     bestSeries = currentSeries;
-                    currentSeries = 0;
                 }
                 currentSeries = 0;
             }
