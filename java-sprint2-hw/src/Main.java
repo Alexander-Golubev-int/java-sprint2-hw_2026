@@ -77,7 +77,7 @@ public class Main {
 
                 }
             } else if (cmd == 4) {
-                System.out.println("Хорошо дня! ༼ つ ◕_◕ ༽つ");
+                System.out.println("Хорошего дня! ༼ つ ◕_◕ ༽つ");
                 return;
             } else {
                 System.out.println("Такой команды не существует! ");
@@ -90,6 +90,7 @@ public class Main {
         System.out.println("1. Ввод пройденного количества шагов за день. ");
         System.out.println("2. Изменить цель по количеству шагов в день. ");
         System.out.println("3. Вывод статистиски за определенный месяц. ");
+        System.out.println("4. Выход из приложения. ");
     }
 
     static void printSelectOfAction() {
