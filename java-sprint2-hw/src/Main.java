@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
+
+    static String printMonth = "Выберите месяц где: 1 - январь, 2 - февралья, 3 - март, 4 - апрель " +
+            "5 - май, 6 - июнь, 7 - июль, 8 - август, 9 - сентябрь, 10 - октрябрь, 11 - ноябрь, 12 - декабрь.";
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker(scanner);
-        String printMonth = "Выберите месяц где: 1 - январь, 2 - февралья, 3 - март, 4 - апрель " +
-                "5 - май, 6 - июнь, 7 - июль, 8 - август, 9 - сентябрь, 10 - октрябрь, 11 - ноябрь, 12 - декабрь.";
 
         System.out.println("-".repeat(79));
         System.out.println("Здрастсвуйте! Вас приветствует прототип шагомера v.1.0 Рад измерить ваши шаги!༼ つ ◕_◕ ༽つ");
@@ -63,7 +65,7 @@ public class Main {
                         System.out.println(printMonth);
                         cmd = scanner.nextInt();
                         if (cmd > 0 && cmd < 13) {
-                            stepTracker.printStatistic(cmd);
+                            stepTracker.printStatistic(cmd - 1);
                         } else {
                             System.out.println("Извините, но такого месяца нет!");
                         }
