@@ -77,7 +77,9 @@ public class Main {
 
                 }
             } else if (cmd == 4) {
-                System.out.println("Хорошего дня! С Вами был шагомер v.1.0. Рад был померить ваши шаги!  ༼ つ ◕_◕ ༽つ");
+                System.out.println("-".repeat(79));
+                System.out.println("Хорошего дня! С Вами был шагомер v.1.0. Рад был измерить ваши шаги!  ༼ つ ◕_◕ ༽つ");
+                System.out.println("-".repeat(79));
                 return;
             } else {
                 System.out.println("Такой команды не существует! ");
